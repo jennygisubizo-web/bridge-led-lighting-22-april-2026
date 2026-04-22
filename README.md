@@ -26,7 +26,7 @@ int lastButtonState = HIGH;
 void loop() {
   int currentButtonState = digitalRead(buttonPin);
 
-  // Detect button press (HIGH → LOW)
+
   if (lastButtonState == HIGH && currentButtonState == LOW) {
     ledState = !ledState;   
     delay(50);              
